@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EL CICLO</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>EL CICLO</h1>
-        <p>Algo está a punto de pasar el día 1 de Septiembre</p>
+        <h2>una celebración renacida.</h2>
+        <br>
+        <br>
+        <p>Quedan 62 dias para que algo nuevo comience. Pronto más información.</p>
+        <p>Si quieres conocernos mejor, mira esto:</p>
+    </div>
+    <div class="container">
+        <video id="myVideo" autoplay muted playsinline>
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <script>
+            const video = document.getElementById('myVideo');
+            const videoSource = document.getElementById('videoSource');
+        
+            if (window.innerWidth < 768) {
+                // Dispositivo móvil o iOS
+                videoSource.src = 'video/detras_del_ciclo_vert.mp4';
+            } else {
+                // Ordenador
+                videoSource.src = 'video/detras_del_ciclo.mp4';
+            }
+        
+            video.load();
+            video.play();
+     
+            video.addEventListener('click', function() {
+                this.muted =!this.muted;
+            });
+        </script>
     </div>
 </body>
 </html>

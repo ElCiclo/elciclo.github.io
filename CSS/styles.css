@@ -11,6 +11,20 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-family: 'Futura Black';
+  }
+
+h2 {
+    font-family: 'Futura';
+}
+
+p {
+    font-family: 'Futura';
+    text-align: justify
+}
+
+
 .container {
     height: 100vh;
     display: flex;
@@ -61,3 +75,12 @@ body {
     height: 100%;
     object-fit: cover;
 }
+ 
+  #myVideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
