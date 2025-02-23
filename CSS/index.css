@@ -1,0 +1,517 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fuente/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('woff');
+  }
+
+*{
+    font-family: PlayfairDisplay;
+    line-height: 1.4;
+}
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.section{
+    height: 100vh; 
+    scroll-snap-align: start;
+}
+
+.movil{
+    display: none;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    margin-top: 5vh;
+    margin-right: 5vw;
+}
+
+.boton{
+    padding: 0px 20px ;
+    font-size: 20px;
+    color:#555555;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.boton:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.boton:active{
+    opacity: 50%;
+}
+
+#info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#separacionInfo{
+    width: 10px;
+}
+
+#cicloImg{
+    width: 65vw;
+    padding-left: 2vw;
+}
+#cicloText{
+    width: 25vw;
+    color: #1c1c1c;
+    font-size: 32px;
+    padding-right: 2vw;
+}
+
+#videoteca{
+    background-image: url("../img/fondovinos.gif");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:  #FAF9F6;
+}
+
+.secondHeader{
+    width: 90vw;
+    font-size: 32px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.cicloIcon{
+    width: 50px;
+}
+
+#sliderVinoteca{
+    width: 70vw;
+    height:80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+#sliderContent{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+}
+
+#currentCicloText{
+    width:25vw;
+    height: fit-content;
+    text-align: center;
+    font-size: 20px;
+    text-align: left;
+}
+
+.sliderButtons:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 60%;
+}
+
+.sliderButtons:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 10%;
+}
+
+.sliderMostrarVinoIz{
+    animation: sliderMostrarVinoIz 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.sliderOcultarVinoIz{
+    animation: sliderOcultarVinoIz 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.sliderMostrarVinoDer{
+    animation: sliderMostrarVinoDer 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.sliderOcultarVinoDer{
+    animation: sliderOcultarVinoDer 1s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sliderMostrarVinoIz{
+    0%{transform: scale(0.8,0.8); right: 30%; opacity: 0;}
+    100%{transform: scale(1,1); right: 0%; opacity: 1;}
+}
+
+@keyframes sliderOcultarVinoIz {
+    0%{transform: scale(1,1); left: 0%; opacity: 1;}
+    100%{transform: scale(0.8,0.8); left: 30%; opacity: 0;}
+}
+
+@keyframes sliderMostrarVinoDer{
+    0%{transform: scale(0.8,0.8); left: 30%; opacity: 0;}
+    100%{transform: scale(1,1); left: 0%; opacity: 1;}
+}
+
+@keyframes sliderOcultarVinoDer {
+    0%{transform: scale(1,1); right: 0%; opacity: 1;}
+    100%{transform: scale(0.8,0.8); right: 30%; opacity: 0;}
+}
+
+#proyectos{
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+
+#contentProyectos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: start;
+    height: 40vh;
+}
+
+.flexRowButtons{
+    width: 90vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.botonesProyectos{
+    font-size: 40px;
+    border-radius: 25px;
+    padding: 15px 10px;
+    width: 550px;
+}
+
+.botonesProyectos:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.botonesProyectos:active{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#galaProyectos{
+    background-color: yellow;
+}
+#musProyectos{
+    background-color: greenyellow;
+}
+#becasProyectos{
+    background-color: skyblue;
+}
+
+#cicloMascota{
+    position: absolute;
+    bottom: 0px;
+    right: 2vw;
+    width: 50vw;
+}
+
+
+.popUp{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: scale(0);
+}
+
+#galaPopUp{
+    background-color: yellow;
+}
+#contentGala{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+#textGala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: fit-content;
+    text-align: center;
+}
+
+#imagenGala{
+    width: 40vw;
+}
+
+#musPopUp{
+    background-color: greenyellow;
+}
+
+#logoMus{
+    width: 30vw;
+}
+
+#contentMus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#textMus{
+    width: 55vw;
+    text-align: center;
+}
+
+#alfonsoMus{
+    width: 20vw;
+}
+
+.showPopUp{
+    /* animation: showPopUp 1s 1;
+    animation-fill-mode: forwards; */
+    transform: scale(1);
+    opacity: 1;
+}
+.hidePopUp{
+    /* animation: hidePopUp 1s 1;
+    animation-fill-mode: forwards; */
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* @keyframes showPopUp{
+    0%{transform: scale(0); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+} */
+
+/* @keyframes hidePopUp{
+    0%{transform: scale(1); opacity: 1;}
+    100%{transform: scale(0); opacity: 0;}
+} */
+
+.closePopUp:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.closePopUp:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .movil{
+        display: none;
+    }
+
+    #main{
+        justify-content: space-between;
+    }
+    #header{
+       margin-top: 5.625vh;
+    }
+
+    #info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12vh;
+    }
+    
+    #cicloImg{
+        width: 80vw;
+        padding-left: 0vw;
+        margin-bottom: 40px;
+    }
+    #cicloText{
+        width: 80vw;
+        color:#1c1c1c;
+        padding-right: 0vw;
+        font-size: 20px;
+    }
+
+    #sliderVinoteca{
+        width: 95vw;
+        height:50vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 40px;
+        margin-top: 5vh;
+    }
+    #sliderContent{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin: 20px;
+    }
+
+    #currentCicloImg{
+        height: 50vh;
+    }
+    #currentCicloText{
+        width:95%;
+        height: fit-content;
+        text-align: center;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #currentCicloText h1{
+        margin-block-end: 0.37em;
+    }
+
+    #cicloMascota{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 98vw;
+        max-width: 550px;
+        max-height: 40vh;
+        margin:auto;
+    }
+    
+    .botonesProyectos{
+        font-size: 25px;
+        border-radius: 25px;
+        padding: 15px 10px;
+        width: fit-content;
+        min-width: 90vw;
+    }
+
+    .flexRowButtons{
+        justify-content: center;
+    }
+
+    #contentGala{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
+        width: 100%;
+    }
+
+    #textGala{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: fit-content;
+    }
+    
+    #imagenGala{
+        width: 90vw;
+    }
+
+    #contentMus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70vh
+    }
+    
+    #logoMus{
+        width: 60%;
+    }
+
+    #textMus{
+        width: 90vw;
+        text-align: center;
+    }
+    
+    #alfonsoMus{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .cicloIcon{
+        width: 40px;
+    }
+
+    .tituloHeader{
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #contentProyectos{
+        height: 35vh;
+    }
+
+    .secondHeader{
+        margin-bottom: 5vh;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #currentCicloImg{
+        height: 70vh;
+    }
+}
