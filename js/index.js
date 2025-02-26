@@ -178,7 +178,7 @@ window.onload= () =>{
         musPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
-        document.getElementById("musPopUp").style.overflowY = 'scroll';
+        // document.getElementById("musPopUp").style.overflowY = 'scroll';
     }
     becaButton.onclick = () => {
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
