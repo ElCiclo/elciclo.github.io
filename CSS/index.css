@@ -28,6 +28,11 @@ body{
     display: none;
 }
 
+.link{
+    color: darkgreen;
+    text-decoration: none;
+}
+
 #main{
     display: flex;
     flex-direction: column;
