@@ -70,9 +70,7 @@ window.onload= () =>{
         currentImg.src = cicloJson[0].img;
         currentText.innerHTML=cicloJson[0].text;
         
-        currentSlide.onclick = () => {
-            window.location.href = "./proyecto/index.html?p="+currentPosition ;
-        }
+        currentSlide.onclick = cicloFlix;
         toMainPage();
     } 
 
@@ -99,9 +97,8 @@ window.onload= () =>{
             newSlide = createNewSlide();
             newSlide.children[0].src = cicloJson[currentPosition].img;
             newSlide.children[1].innerHTML = cicloJson[currentPosition].text;
-            newSlide.onclick = () => {
-                window.location.href = "./proyecto/index.html?p="+currentPosition ;
-            }
+            newSlide.onclick = cicloFlix;
+
             setTimeout(function(){
                 currentSlide.parentNode.replaceChild(newSlide, currentSlide);
                 currentSlide = newSlide;
@@ -124,9 +121,7 @@ window.onload= () =>{
             newSlide = createNewSlide();
             newSlide.children[0].src = cicloJson[currentPosition].img;
             newSlide.children[1].innerHTML = cicloJson[currentPosition].text;
-            newSlide.onclick = () => {
-                window.location.href = "./proyecto/index.html?p="+currentPosition ;
-            }
+            newSlide.onclick = cicloFlix;
         setTimeout(function(){
                 currentSlide.parentNode.replaceChild(newSlide, currentSlide);
                 currentSlide = newSlide;
@@ -156,6 +151,14 @@ window.onload= () =>{
 
     rightButton.onclick = changeRight;
     leftButton.onclick = changeLeft;
+
+    function cicloFlix(){
+        document.getElementById("ciclofix").classList.remove("hidePopUp");
+        document.getElementById("ciclofix").classList.add("showPopUp");
+        setTimeout(function(){
+            window.location.href = "./proyecto/index.html?p="+currentPosition ;
+        }, 3330);
+    }
 
     galaButton.onclick = () => {
         galaButton.innerHTML = "<del>"+galaButton.innerText+"</del>";
