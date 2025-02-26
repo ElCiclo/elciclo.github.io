@@ -2,6 +2,8 @@ window.onload= () =>{
     let insta = document.getElementById("insta");
     let mail = document.getElementById("mail");
     let icons = document.getElementsByClassName("cicloIcon");
+    let daysLeft = document.getElementById("daysLeft");
+    let CDay = "2025-08-31";
 
     //Carrusel
     let cicloJson;
@@ -63,6 +65,7 @@ window.onload= () =>{
     }
 
     function loadInicial(){
+        calculateDaysUntilCDay();
         currentPosition= 0;
         let currentImg = currentSlide.children[0];
         let currentText = currentSlide.children[1];
@@ -80,6 +83,18 @@ window.onload= () =>{
                 window.location.href = "./index.html";
             }
         }
+    }
+
+    function calculateDaysUntilCDay(){
+        let thisDay = new Date();
+        CDay = new Date(CDay);
+        console.log(thisDay);
+        console.log(CDay);
+
+        timeDiff = CDay - thisDay;
+        daysDiff = Math.ceil(timeDiff/(1000*60*60*24));
+
+        daysLeft.innerText = ""+daysDiff;
     }
     
     function changeRight(){
