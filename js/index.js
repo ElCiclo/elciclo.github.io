@@ -165,7 +165,7 @@ window.onload= () =>{
         galaPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
-        document.getElementById("galaPopUp").style.overflow = 'scroll';
+        document.getElementById("galaPopUp").style.overflowY = 'scroll';
     }
     musButton.onclick = () => {
         musButton.innerHTML = "<del>"+musButton.innerText+"</del>";
@@ -175,7 +175,7 @@ window.onload= () =>{
         musPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
-        document.getElementById("musPopUp").style.overflow = 'scroll';
+        document.getElementById("musPopUp").style.overflowY = 'scroll';
     }
     becaButton.onclick = () => {
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
