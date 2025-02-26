@@ -91,6 +91,7 @@ body{
 
 #videoteca{
     background-image: url("../img/fondovinos.gif");
+    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -274,51 +275,68 @@ body{
 #galaPopUp{
     background-color: yellow;
 }
-#contentGala{
+.contentGala{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
 }
 
-#textGala{
+.contentGala:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.textGala{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40vw;
     height: fit-content;
     text-align: center;
+    padding-bottom: 40px;
+    font-size: 25px;
 }
 
-#imagenGala{
+.imagenGala{
     width: 40vw;
+    padding-bottom: 40px;
+}
+
+.galaCicloVideo{
+    width: 40vw;
+    padding-bottom: 40px;
 }
 
 #musPopUp{
     background-color: greenyellow;
 }
 
-#logoMus{
-    width: 30vw;
-}
-
-#contentMus{
+.contentMus{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    padding-bottom: 40px;
+    font-size: 25px;
 }
 
-#textMus{
-    width: 55vw;
+.contentMus:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.textMus{
+    width: 40vw;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-#alfonsoMus{
-    width: 20vw;
+.imgMus{
+    width: 40vw;
+    padding-bottom: 40px;
 }
 
 .showPopUp{
@@ -447,28 +465,6 @@ body{
         justify-content: center;
     }
 
-    #contentGala{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        height: 70vh;
-        width: 100%;
-    }
-
-    #textGala{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90vw;
-        height: fit-content;
-    }
-    
-    #imagenGala{
-        width: 90vw;
-    }
-
     #contentMus{
         display: flex;
         flex-direction: column;
@@ -507,6 +503,37 @@ body{
 
     .secondHeader{
         margin-bottom: 5vh;
+    }
+
+    
+    .contentGala:nth-child(even){
+        flex-direction: row;
+    }
+    
+    .textGala{
+        width: 90vw;
+        font-size: medium;
+    }
+    
+    .imagenGala{
+        width: 90vw;
+    }
+    
+    .galaCicloVideo{
+        width: 90vw;
+    }
+
+    .contentMus:nth-child(even){
+        flex-direction: row;
+    }
+    
+    .textMus{
+        width: 90vw;
+        font-size: medium
+    }
+    
+    .imgMus{
+        width: 90vw;
     }
 }
 

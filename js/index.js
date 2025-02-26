@@ -45,18 +45,18 @@ window.onload= () =>{
             },
             {
                 "text": "<h1>ciclo3</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
-                "img":"./img/3_san_lorenzo_crianza.png",
+                "img":"./img/3_sanlorenzocrianza.png",
             },
             {
                 "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
-                "img":"./img/4_tremendo_choice.png",
+                "img":"./img/4_tremendochoice.png",
             },
             {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>ciclo5</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
                 "img":"./img/5_villaisabel.png",
             },
             {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>ciclo6</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
                 "img":"./img/6_ciclogenesisexplosiva.png",
             }
         ]
@@ -165,6 +165,7 @@ window.onload= () =>{
         galaPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
+        document.getElementById("galaPopUp").style.overflow = 'scroll';
     }
     musButton.onclick = () => {
         musButton.innerHTML = "<del>"+musButton.innerText+"</del>";
@@ -174,6 +175,7 @@ window.onload= () =>{
         musPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
+        document.getElementById("musPopUp").style.overflow = 'scroll';
     }
     becaButton.onclick = () => {
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
