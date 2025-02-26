@@ -3,6 +3,11 @@
     src: url(../fuente/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('woff');
 }
 
+@font-face {
+    font-family: helvetica;
+    src: url(../../../fuente/helvetica/Helvetica.ttf) format('woff');
+}
+
 *{
     font-family: PlayfairDisplay;
     line-height: 1.4;
@@ -62,6 +67,7 @@ body{
     height: fit-content;
     width: 40vw;
     text-align: center;
+    font-family: helvetica;
 }
 
 @media only screen and (max-width: 1025px) {

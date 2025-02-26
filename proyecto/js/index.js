@@ -17,23 +17,23 @@ window.onload  = () =>{
             "name":"DEL <del>AÑO</del> CICLO",
             "cortos":[
                 {
-                    "img":"./img/gala.png",
-                    "titulo":"Pinga",
+                    "img":"./img/1.jpg",
+                    "titulo":"PINGA",
                     "autor":"Diego",
                 },
                 {
-                    "img":"./img/ciclo_header.png",
-                    "titulo":"Abre",
+                    "img":"./img/2.jpg",
+                    "titulo":"ABRE",
                     "autor":"Sergio",
                 },
                 {
-                    "img":"./img/gala.png",
-                    "titulo":"Prueba de titulo largo a ver que tal",
+                    "img":"./img/3.jpg",
+                    "titulo":"PRUEBA DE TITULO LARGO A VER QUE TAL",
                     "autor":"Prueba",
                 },
                 {
-                    "img":"./img/ciclo_header.png",
-                    "titulo":"Chiste 1",
+                    "img":"./img/4.jpg",
+                    "titulo":"CHISTE 1",
                     "autor":"Txema",
                 },
             ]
@@ -147,7 +147,7 @@ window.onload  = () =>{
             let cortoContainer = document.createElement("div");
             let imagenCorto = document.createElement("img");
             let tituloCorto = document.createElement("div");
-            let etiquetaTitulo = document.createElement("h1");
+            let boldTitulo = document.createElement("b");
             let autorCorto = document.createElement("div");
 
             cortoContainer.classList.add("cortoContainer");
@@ -155,8 +155,9 @@ window.onload  = () =>{
 
             cortoContainer.classList.add("pointer");
             imagenCorto.src= corto.img;
-            tituloCorto.append(etiquetaTitulo);
-            etiquetaTitulo.innerHTML= corto.titulo;
+            boldTitulo.classList.add("tituloCorto");
+            tituloCorto.append(boldTitulo);
+            boldTitulo.innerHTML= corto.titulo;
             autorCorto.innerHTML= corto.autor;
 
             cortoContainer.append(imagenCorto,tituloCorto,autorCorto);

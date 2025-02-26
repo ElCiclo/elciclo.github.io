@@ -36,27 +36,27 @@ window.onload= () =>{
     function loadJson(){
         return [
             {
-                "text": "<h1>DEL <del>AÑO</del> CICLO</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>DEL <del>AÑO</del> CICLO</h1>JOVEN. Nuestro producto más fresco. Con gran carácter y textura (no descartamos nada). Aconsejable para primerizos.",
                 "img":"./img/1_delciclo.png",
             },
             {
-                "text": "<h1>ciclo2</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
-                "img":"./img/2_abadia.png",
-            },
-            {
-                "text": "<h1>ciclo3</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>SAN LORENZO</h1>BLANCO. Vanguardia y tradición. Una selección delicada, pero atrevida, de nuestro catálogo. Muy ligero y aromático.",
                 "img":"./img/3_sanlorenzocrianza.png",
             },
             {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>ABADÍA DE PIEDAD</h1>RESERVA. Sorprendente en el mejor sentido de la palabra. Un producto respaldado por su solera, que le aporta madurez y estructura. Pensado para los paladares más refinados.",
+                "img":"./img/2_abadia.png",
+            },
+            {
+                "text": "<h1>TREMENDO CHOICE</h1>GRAN RESERVA. La calidad es un valor innegociable, y esta laureada selección es prueba de ello.",
                 "img":"./img/4_tremendochoice.png",
             },
             {
-                "text": "<h1>ciclo5</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>VILLA ISABEL</h1>Porque la calidad no lo es todo. Sencillo, pero eficaz.",
                 "img":"./img/5_villaisabel.png",
             },
             {
-                "text": "<h1>ciclo6</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>CICLOGÉNESIS EXPLOSIVA</h1>ESPUMANTE. Nuestro producto más arriesgado. No apto para todos los paladares.",
                 "img":"./img/6_ciclogenesisexplosiva.png",
             }
         ]
@@ -157,7 +157,7 @@ window.onload= () =>{
         document.getElementById("ciclofix").classList.add("showPopUp");
         setTimeout(function(){
             window.location.href = "./proyecto/index.html?p="+currentPosition ;
-        }, 3330);
+        }, 3000);
     }
 
     galaButton.onclick = () => {
@@ -178,7 +178,7 @@ window.onload= () =>{
         musPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
-        // document.getElementById("musPopUp").style.overflowY = 'scroll';
+        document.getElementById("musPopUp").style.overflowY = 'scroll';
     }
     becaButton.onclick = () => {
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
