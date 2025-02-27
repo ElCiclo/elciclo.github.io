@@ -33,8 +33,13 @@ body{
     display: none;
 }
 
-.link{
-    color: darkgreen;
+.linkMus{
+    color: teal;
+    text-decoration: none;
+}
+
+.linkGala{
+    color: orange;
     text-decoration: none;
 }
 
@@ -126,7 +131,7 @@ body{
 }
 
 #sliderVinoteca{
-    width: 70vw;
+    width: 60vw;
     height:80vh;
     display: flex;
     flex-direction: row;
@@ -150,7 +155,6 @@ body{
     font-family: helvetica;
     width:25vw;
     height: fit-content;
-    text-align: center;
     font-size: 20px;
     text-align: left;
 }
@@ -289,7 +293,7 @@ body{
 }
 
 #galaPopUp{
-    background-color: yellow;
+    background-color: #ffd425;
 }
 .contentGala{
     display: flex;
@@ -305,12 +309,10 @@ body{
 }
 
 .textGala{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 40vw;
     height: fit-content;
-    text-align: center;
+    text-align: left;
     padding-bottom: 40px;
     font-size: 20px;
     font-family: helvetica;
@@ -321,13 +323,13 @@ body{
     padding-bottom: 40px;
 }
 
-.galaCicloVideo{
+.cicloVideo{
     width: 40vw;
     padding-bottom: 40px;
 }
 
 #musPopUp{
-    background-color: greenyellow;
+    background-color: #46ff36;
 }
 
 .contentMus{
@@ -346,10 +348,14 @@ body{
 
 .textMus{
     width: 40vw;
-    text-align: center;
+    text-align: left;
     padding-bottom: 40px;
     font-family: helvetica;
     font-size: 20px;
+}
+
+#musHeader{
+    width: 30vw;
 }
 
 .imgMus{
@@ -553,10 +559,10 @@ body{
     }
     
     .imagenGala{
-        width: 90vw;
+        width: 100vw;
     }
     
-    .galaCicloVideo{
+    .cicloVideo{
         width: 90vw;
     }
 
@@ -575,6 +581,10 @@ body{
 
     #imgCicloFlix{
         width: 80vw;
+    }
+
+    #musHeader{
+        width: 90vw;
     }
 }
 
