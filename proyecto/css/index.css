@@ -147,6 +147,61 @@ font-size: 30px;
 font-family: helvetica;
 }
 
+#passPage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    background-image: url("../img/whiteNoise.webp");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#passContent{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 25vw;
+    height: fit-content;
+    background-color:rgb(46, 46, 46);
+    z-index: 10;
+    border-radius: 30px;
+    color: #00FF00;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+#formPass{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#sendPass{
+    border: solid #00FF00 1px;
+    padding: 5px 10px;
+}
+
+#passInput{
+    background-color: grey;
+    color:#00FF00;
+}
+
+.showPass{
+    transform: scale(1);
+}
+
+.hidePass{
+    transform: scale(0);
+}
 @media only screen and (max-width: 1025px) {
     .ordenador{
         display: none;
@@ -169,5 +224,9 @@ font-family: helvetica;
     
     #iconHeader{
         width: 40px;
+    }
+
+    #passContent{
+        width: 80vw;
     }
 }
