@@ -2,6 +2,8 @@ window.onload= () =>{
     let insta = document.getElementById("insta");
     let mail = document.getElementById("mail");
     let icons = document.getElementsByClassName("cicloIcon");
+    let daysLeft = document.getElementById("daysLeft");
+    let CDay = "2025-08-31";
 
     //Carrusel
     let cicloJson;
@@ -36,33 +38,34 @@ window.onload= () =>{
     function loadJson(){
         return [
             {
-                "text": "<h1>DEL <del>AÑO</del> CICLO</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>DEL <del>AÑO</del> CICLO</h1>JOVEN. Nuestro producto más fresco. Con gran carácter y textura (no descartamos nada). Aconsejable para primerizos.",
                 "img":"./img/1_delciclo.png",
             },
             {
-                "text": "<h1>ciclo2</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>SAN LORENZO</h1>BLANCO. Vanguardia y tradición. Una selección delicada, pero atrevida, de nuestro catálogo. Muy ligero y aromático.",
+                "img":"./img/3_sanlorenzocrianza.png",
+            },
+            {
+                "text": "<h1>ABADÍA DE PIEDAD</h1>RESERVA. Sorprendente en el mejor sentido de la palabra. Un producto respaldado por su solera, que le aporta madurez y estructura. Pensado para los paladares más refinados.",
                 "img":"./img/2_abadia.png",
             },
             {
-                "text": "<h1>ciclo3</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
-                "img":"./img/3_san_lorenzo_crianza.png",
+                "text": "<h1>TREMENDO CHOICE</h1>GRAN RESERVA. La calidad es un valor innegociable, y esta laureada selección es prueba de ello.",
+                "img":"./img/4_tremendochoice.png",
             },
             {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
-                "img":"./img/4_tremendo_choice.png",
-            },
-            {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>VILLA ISABEL</h1>Porque la calidad no lo es todo. Sencillo, pero eficaz.",
                 "img":"./img/5_villaisabel.png",
             },
             {
-                "text": "<h1>ciclo4</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius placerat nibh. Nam ullamcorper vestibulum urna, sed porttitor massa placerat in.",
+                "text": "<h1>CICLOGÉNESIS EXPLOSIVA</h1>ESPUMANTE. Nuestro producto más arriesgado. No apto para todos los paladares.",
                 "img":"./img/6_ciclogenesisexplosiva.png",
             }
         ]
     }
 
     function loadInicial(){
+        calculateDaysUntilCDay();
         currentPosition= 0;
         let currentImg = currentSlide.children[0];
         let currentText = currentSlide.children[1];
@@ -70,9 +73,7 @@ window.onload= () =>{
         currentImg.src = cicloJson[0].img;
         currentText.innerHTML=cicloJson[0].text;
         
-        currentSlide.onclick = () => {
-            window.location.href = "./proyecto/index.html?p="+currentPosition ;
-        }
+        currentSlide.onclick = cicloFlix;
         toMainPage();
     } 
 
@@ -82,6 +83,18 @@ window.onload= () =>{
                 window.location.href = "./index.html";
             }
         }
+    }
+
+    function calculateDaysUntilCDay(){
+        let thisDay = new Date();
+        CDay = new Date(CDay);
+        console.log(thisDay);
+        console.log(CDay);
+
+        timeDiff = CDay - thisDay;
+        daysDiff = Math.ceil(timeDiff/(1000*60*60*24));
+
+        daysLeft.innerText = ""+daysDiff;
     }
     
     function changeRight(){
@@ -99,9 +112,8 @@ window.onload= () =>{
             newSlide = createNewSlide();
             newSlide.children[0].src = cicloJson[currentPosition].img;
             newSlide.children[1].innerHTML = cicloJson[currentPosition].text;
-            newSlide.onclick = () => {
-                window.location.href = "./proyecto/index.html?p="+currentPosition ;
-            }
+            newSlide.onclick = cicloFlix;
+
             setTimeout(function(){
                 currentSlide.parentNode.replaceChild(newSlide, currentSlide);
                 currentSlide = newSlide;
@@ -124,9 +136,7 @@ window.onload= () =>{
             newSlide = createNewSlide();
             newSlide.children[0].src = cicloJson[currentPosition].img;
             newSlide.children[1].innerHTML = cicloJson[currentPosition].text;
-            newSlide.onclick = () => {
-                window.location.href = "./proyecto/index.html?p="+currentPosition ;
-            }
+            newSlide.onclick = cicloFlix;
         setTimeout(function(){
                 currentSlide.parentNode.replaceChild(newSlide, currentSlide);
                 currentSlide = newSlide;
@@ -157,6 +167,14 @@ window.onload= () =>{
     rightButton.onclick = changeRight;
     leftButton.onclick = changeLeft;
 
+    function cicloFlix(){
+        document.getElementById("ciclofix").classList.remove("hidePopUp");
+        document.getElementById("ciclofix").classList.add("showPopUp");
+        setTimeout(function(){
+            window.location.href = "./proyecto/index.html?p="+currentPosition ;
+        }, 3000);
+    }
+
     galaButton.onclick = () => {
         galaButton.innerHTML = "<del>"+galaButton.innerText+"</del>";
         localStorage.setItem("enterGala", "true");
@@ -165,6 +183,7 @@ window.onload= () =>{
         galaPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
+        document.getElementById("galaPopUp").style.overflowY = 'scroll';
     }
     musButton.onclick = () => {
         musButton.innerHTML = "<del>"+musButton.innerText+"</del>";
@@ -174,6 +193,7 @@ window.onload= () =>{
         musPopUp.classList.add("showPopUp");
 
         document.getElementById("container").style.overflow = 'hidden';
+        document.getElementById("musPopUp").style.overflowY = 'scroll';
     }
     becaButton.onclick = () => {
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";

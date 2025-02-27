@@ -5,6 +5,7 @@ window.onload  = () =>{
     let cortos = document.getElementById("content");
     let menuArrow = document.getElementById("menuArrow");
     let icons = document.getElementsByClassName("cicloIcon");
+    let passPage = document.getElementById("passPage");
     let querystring = window.location.search;
     let params = new URLSearchParams(querystring);
     let jsonProyectos = loadJson();
@@ -17,23 +18,23 @@ window.onload  = () =>{
             "name":"DEL <del>AÑO</del> CICLO",
             "cortos":[
                 {
-                    "img":"./img/gala.png",
-                    "titulo":"Pinga",
+                    "img":"./img/1.jpg",
+                    "titulo":"PINGA",
                     "autor":"Diego",
                 },
                 {
-                    "img":"./img/ciclo_header.png",
-                    "titulo":"Abre",
+                    "img":"./img/2.jpg",
+                    "titulo":"ABRE",
                     "autor":"Sergio",
                 },
                 {
-                    "img":"./img/gala.png",
-                    "titulo":"Prueba de titulo largo a ver que tal",
+                    "img":"./img/3.jpg",
+                    "titulo":"PRUEBA DE TITULO LARGO A VER QUE TAL",
                     "autor":"Prueba",
                 },
                 {
-                    "img":"./img/ciclo_header.png",
-                    "titulo":"Chiste 1",
+                    "img":"./img/4.jpg",
+                    "titulo":"CHISTE 1",
                     "autor":"Txema",
                 },
             ]
@@ -91,26 +92,25 @@ window.onload  = () =>{
     {
         "name":"ciclo 3",
         "cortos":[
-            {
-                "img":"./img/gala.png",
-                "titulo":"Pinga",
-                "autor":"Pingenson",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"sus",
-                "autor":"Amon",
-            },
-            {
-                "img":"./img/gala.png",
-                "titulo":"Gala",
-                "autor":"Ciclo",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"Prueba",
-                "autor":"Cisco",
-            },
+
+        ]
+    },
+    {
+        "name":"ciclo 4",
+        "cortos":[
+
+        ]
+    },
+    {
+        "name":"ciclo 5",
+        "cortos":[
+
+        ]
+    },
+    {
+        "name":"ciclo 6",
+        "cortos":[
+
         ]
     },
 ]
@@ -123,6 +123,9 @@ window.onload  = () =>{
             loadContent(params.get("p"));
             setLocalStorage(params.get("p"));
             toMainPage();
+            if(params.get("p") == 5 && localStorage.getItem("accesoPermitido") != "true"){
+                cicloGenesisContrasena();
+            }
         }
     }
 
@@ -147,7 +150,7 @@ window.onload  = () =>{
             let cortoContainer = document.createElement("div");
             let imagenCorto = document.createElement("img");
             let tituloCorto = document.createElement("div");
-            let etiquetaTitulo = document.createElement("h1");
+            let boldTitulo = document.createElement("b");
             let autorCorto = document.createElement("div");
 
             cortoContainer.classList.add("cortoContainer");
@@ -155,8 +158,9 @@ window.onload  = () =>{
 
             cortoContainer.classList.add("pointer");
             imagenCorto.src= corto.img;
-            tituloCorto.append(etiquetaTitulo);
-            etiquetaTitulo.innerHTML= corto.titulo;
+            boldTitulo.classList.add("tituloCorto");
+            tituloCorto.append(boldTitulo);
+            boldTitulo.innerHTML= corto.titulo;
             autorCorto.innerHTML= corto.autor;
 
             cortoContainer.append(imagenCorto,tituloCorto,autorCorto);
@@ -210,5 +214,33 @@ window.onload  = () =>{
     function arrowClose(){
         menuArrow.classList.remove("arrowOpen");
         menuArrow.classList.add("arrowClose");
+    }
+
+    function cicloGenesisContrasena(){
+        let sendPass = document.getElementById("sendPass");
+        let pass = document.getElementById("passInput");
+        passPage.classList.remove("hidePass");
+        passPage.classList.add("showPass");
+        document.body.style.overflow = 'hidden';
+
+        sendPass.onclick = () => {
+            if (pass.value == "YL0quenosirve_yonolorecicl0") {
+                localStorage.setItem("accesoPermitido", "true");
+
+                passPage.classList.remove("showPass");
+                passPage.classList.add("hidePass");
+                document.body.style.overflow = 'auto';
+            }else{
+                addPromoEmail();
+            }
+        }
+    }
+    
+    function addPromoEmail(){
+        let passContent = document.getElementById("passContent");
+        let newDiv = document.createElement("div");
+        
+        newDiv.innerHTML ="system# error preguntar a lavidaesunciclog6@gmail.com"
+        passContent.appendChild(newDiv);
     }
 }
