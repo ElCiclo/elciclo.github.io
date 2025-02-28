@@ -156,7 +156,7 @@ font-family: helvetica;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    top:15vh;
 }
 
 #passContent{

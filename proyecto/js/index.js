@@ -14,106 +14,383 @@ window.onload  = () =>{
 
     function loadJson(){
         return  [
+            {
+                "name":"DEL <del>AÑO</del> CICLO",
+                "cortos":[
+                    {
+                        "img":"./img/57.jpg",
+                        "titulo":"ABREJAIME",
+                        "autor":"VII. By Rodrigo",
+                    },
+                    {
+                        "img":"./img/60.jpg",
+                        "titulo":"AVE",
+                        "autor":"VII. By Diego",
+                    },
+                    {
+                        "img":"./img/62.jpg",
+                        "titulo":"B*** SHOWER",
+                        "autor":"VII. By Diego",
+                    },
+                    {
+                        "img":"./img/47.jpg",
+                        "titulo":"CAMERA C***",
+                        "autor":"VII. By Diego",
+                    },
+                    {
+                        "img":"./img/40.jpg",
+                        "titulo":"COSI",
+                        "autor":"VII. By Alberto",
+                    },
+                    {
+                        "img":"./img/43.jpg",
+                        "titulo":"DGT",
+                        "autor":"VII. By Alberto",
+                    },
+                    {
+                        "img":"./img/59.jpg",
+                        "titulo":"DIOS APRIETA",
+                        "autor":"VII. By Dieg",
+                    },
+                    {
+                        "img":"./img/48.jpg",
+                        "titulo":"*****DUNE",
+                        "autor":"VII. By Rodrigo",
+                    },
+                    {
+                        "img":"./img/38.jpg",
+                        "titulo":"ECOSIA",
+                        "autor":"VII. By Rodrigo",
+                    },
+                    {
+                        "img":"./img/33.jpg",
+                        "titulo":"INTRO VII",
+                        "autor":"VII. By Alberto",
+                    },
+                    {
+                        "img":"./img/58.jpg",
+                        "titulo":"*****SAURUS",
+                        "autor":"VII. By Rodrigo",
+                    },
+                    {
+                        "img":"./img/42.jpg",
+                        "titulo":"O CARALHO",
+                        "autor":"VII. By Alberto",
+                    },
+                    {
+                        "img":"./img/57.jpg",
+                        "titulo":"PLAN B",
+                        "autor":"VII. By Rodrigo",
+                    },
+                    {
+                        "img":"./img/61.jpg",
+                        "titulo":"PORRÓNPOMERO",
+                        "autor":"VII. By Diego",
+                    },
+            {
+                        "img":"./img/45.jpg",
+                        "titulo":"PQNQ",
+                        "autor":"VII. By Alberto&Diego",
+                    },
+                    {
+                        "img":"./img/52.jpg",
+                        "titulo":"SARTÉN",
+                        "autor":"VII. By Diego",
+                    },
+                    {
+                        "img":"./img/49.jpg",
+                        "titulo":"SONIDO SECRETO",
+                        "autor":"VII. By Diego",
+                    },
+                    {
+                        "img":"./img/50.jpg",
+                        "titulo":"TIENDA DE CAMPAÑA",
+                        "autor":"VII. By Alberto&Diego",
+                    },
+    
+                ]
+        },
         {
-            "name":"DEL <del>AÑO</del> CICLO",
+            "name":"SAN LORENZO",
             "cortos":[
                 {
-                    "img":"./img/1.jpg",
-                    "titulo":"PINGA",
-                    "autor":"Diego",
-                },
-                {
-                    "img":"./img/2.jpg",
-                    "titulo":"ABRE",
-                    "autor":"Sergio",
-                },
-                {
-                    "img":"./img/3.jpg",
-                    "titulo":"PRUEBA DE TITULO LARGO A VER QUE TAL",
-                    "autor":"Prueba",
+                    "img":"./img/20.jpg",
+                    "titulo":"CAYÓ LA NOCHE",
+                    "autor":"V. By Diego",
                 },
                 {
                     "img":"./img/4.jpg",
-                    "titulo":"CHISTE 1",
-                    "autor":"Txema",
+                    "titulo":"CICLO 4D",
+                    "autor":"V. By EL CICLO",
+                },
+                {
+                    "img":"./img/3.jpg",
+                    "titulo":"DEC*****",
+                    "autor":"II. By Rodrigo",
+                },
+                {
+                    "img":"./img/10.jpg",
+                    "titulo":"DEMASIADAS MUJERES",
+                    "autor":"IV. By EL CICLO",
+                },
+    {
+                    "img":"./img/2.jpg",
+                    "titulo":"GENIUS: BAD BUNNY",
+                    "autor":"II. By EL CICLO",
+                },
+    {
+                    "img":"./img/6.jpg",
+                    "titulo":"HANNAH MONTANA",
+                    "autor":"V. By Diego",
+                },
+    {
+                    "img":"./img/55.jpg",
+                    "titulo":"HARRY POTTER",
+                    "autor":"VI. By Rodrigo",
+                },
+    {
+                    "img":"./img/9.jpg",
+                    "titulo":"INC*****",
+                    "autor":"VI. By Diego",
+                },
+    {
+                    "img":"./img/26.jpg",
+                    "titulo":"LEAVE THE DOOR OPEN",
+                    "autor":"IV. By EL CICLO",
+                },
+    {
+                    "img":"./img/54.jpg",
+                    "titulo":"MAYERLING",
+                    "autor":"VI. By Alberto",
+                },
+    {
+                    "img":"./img/7.jpg",
+                    "titulo":"MENÚ ********",
+                    "autor":"VI. By Rodrigo",
+                },
+    {
+                    "img":"./img/1.jpg",
+                    "titulo":"PEUGEOOT 205",
+                    "autor":"I. By EL CICLO",
+                },
+    {
+                    "img":"./img/8.jpg",
+                    "titulo":"ROBOT",
+                    "autor":"VI. By Rodrigo",
+                },
+    {
+                    "img":"./img/12.jpg",
+                    "titulo":"SCARLET",
+                    "autor":"IV. By Diego",
+                },
+    {
+                    "img":"./img/5.jpg",
+                    "titulo":"TINDER",
+                    "autor":"V. By Diego",
+                },
+    {
+                    "img":"./img/17.jpg",
+                    "titulo":"TO CICLAOS",
+                    "autor":"V. By Raúl",
                 },
             ]
-    },
+        },
+        {
+            "name":"ABADÍA DE PIEDAD",
+            "cortos":[
+                {
+                    "img":"./img/35.jpg",
+                    "titulo":"AHÍ HAY ALGO",
+                    "autor":"VI. By EL CICLO",
+                },
+                {
+                    "img":"./img/21.jpg",
+                    "titulo":"CICLONAVIR",
+                    "autor":"III. By Diego",
+                },
     {
-        "name":"ciclo 1",
-        "cortos":[
-            {
-                "img":"./img/gala.png",
-                "titulo":"Pinga",
-                "autor":"Prueba3",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"2",
-                "autor":"3",
-            },
-            {
-                "img":"./img/gala.png",
-                "titulo":"4",
-                "autor":"5",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"6",
-                "autor":"7",
-            },
-        ]
-    },
+                    "img":"./img/25.jpg",
+                    "titulo":"COCA TARRADELLAS",
+                    "autor":"III. By Raúl",
+                },
     {
-        "name":"ciclo 2",
-        "cortos":[
-            {
-                "img":"./img/gala.png",
-                "titulo":"Pinga",
-                "autor":"Pingenson",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"sus",
-                "autor":"Amon",
-            },
-            {
-                "img":"./img/gala.png",
-                "titulo":"Gala",
-                "autor":"Ciclo",
-            },
-            {
-                "img":"./img/ciclo_header.png",
-                "titulo":"Prueba",
-                "autor":"Cisco",
-            },
-        ]
-    },
+                    "img":"./img/14.jpg",
+                    "titulo":"C*********",
+                    "autor":"IV. By Diego",
+                },
     {
-        "name":"ciclo 3",
-        "cortos":[
-
-        ]
-    },
+                    "img":"./img/28.jpg",
+                    "titulo":"DIVERSIDAD CON BANDERAS",
+                    "autor":"V. By EL CICLO",
+                },
     {
-        "name":"ciclo 4",
-        "cortos":[
-
-        ]
-    },
+                    "img":"./img/19.jpg",
+                    "titulo":"GTA: SALOU CITY",
+                    "autor":"V. By Diego",
+                },
     {
-        "name":"ciclo 5",
-        "cortos":[
-
-        ]
-    },
+                    "img":"./img/65.jpg",
+                    "titulo":"OH DE RODRA",
+                    "autor":"II. By Rodrigo",
+                },
     {
-        "name":"ciclo 6",
-        "cortos":[
-
-        ]
-    },
-]
+                    "img":"./img/27.jpg",
+                    "titulo":"SEAT",
+                    "autor":"V. By Rodrigo",
+                },
+    {
+                    "img":"./img/11.jpg",
+                    "titulo":"TRAILER IV",
+                    "autor":"IV. By EL CICLO",
+                },
+            ]
+        },
+        {
+            "name":"TREMENDO CHOICE",
+            "cortos":[
+    {
+                    "img":"./img/36.jpg",
+                    "titulo":"AUTOBÚS A BARCELONA",
+                    "autor":"VI. By Diego",
+                },
+    {
+                    "img":"./img/67.jpg",
+                    "titulo":"CADENA",
+                    "autor":"By EL CICLO",
+                },
+    {
+                    "img":"./img/41.jpg",
+                    "titulo":"LA FINCA DE DON SEVERIANO",
+                    "autor":"VII. By Alberto&Diego",
+                },
+    {
+                    "img":"./img/68.jpg",
+                    "titulo":"LA NIEBLA",
+                    "autor":"VIII. By Alberto&Diego",
+                },
+    {
+                    "img":"./img/72.jpg",
+                    "titulo":"LOW BATTERY",
+                    "autor":"V. By Rodrigo",
+                },
+    {
+                    "img":"./img/46.jpg",
+                    "titulo":"MAMÁ, QUIERO SER ARTISTA",
+                    "autor":"VIII. By Rodrigo",
+                },
+    {
+                    "img":"./img/69.jpg",
+                    "titulo":"SUERTE",
+                    "autor":"V. By Alberto&Diego",
+                },
+            ]
+        },
+        {
+            "name":"VILLA ISABEL",
+            "cortos":[
+    {
+                    "img":"./img/16.jpg",
+                    "titulo":"ARROCES PERMATRAGO",
+                    "autor":"V. By Alberto",
+                },
+    {
+                    "img":"./img/18.jpg",
+                    "titulo":"BOMBA",
+                    "autor":"IV. By Diego",
+                },
+    {
+                    "img":"./img/34.jpg",
+                    "titulo":"CONSULTORIO DE BENITO",
+                    "autor":"VI. By Alberto",
+                },
+    {
+                    "img":"./img/64.jpg",
+                    "titulo":"CREP",
+                    "autor":"II. By Rodrigo",
+                },
+    {
+                    "img":"./img/22.jpg",
+                    "titulo":"CTRL",
+                    "autor":"III. By Rodrigo",
+                },
+    {
+                    "img":"./img/30.jpg",
+                    "titulo":"DUREX",
+                    "autor":"IV. By Diego",
+                },
+    {
+                    "img":"./img/31.jpg",
+                    "titulo":"STRAIGHT",
+                    "autor":"VI. By Rodrigo",
+                },
+    {
+                    "img":"./img/70.jpg",
+                    "titulo":"JUST DANCE",
+                    "autor":"III. By EL CICLO",
+                },
+    {
+                    "img":"./img/37.jpg",
+                    "titulo":"MOTO",
+                    "autor":"VI. By Rodrigo",
+                },
+    {
+                    "img":"./img/32.jpg",
+                    "titulo":"PA TODA LA VIDA",
+                    "autor":"IV. By EL CICLO",
+                },
+    {
+                    "img":"./img/39.jpg",
+                    "titulo":"PANDA",
+                    "autor":"VI. By Alberto",
+                },
+    {
+                    "img":"./img/13.jpg",
+                    "titulo":"SILENCIO",
+                    "autor":"V. By Rodrigo",
+                },
+    {
+                    "img":"./img/15.jpg",
+                    "titulo":"WAVIN FLAG",
+                    "autor":"IV. By EL CICLO",
+                },
+            ]
+        },
+        {
+            "name":"CICLOGÉNESIS EXPLOSIVA",
+            "cortos":[
+    {
+                    "img":"./img/23.jpg",
+                    "titulo":"COCINA CON SERGIO",
+                    "autor":"III. By Rodrigo",
+                },
+    {
+                    "img":"./img/63.jpg",
+                    "titulo":"HAMBRE",
+                    "autor":"II. By Rodrigo",
+                },
+    {
+                    "img":"./img/56.jpg",
+                    "titulo":"I WANT TO BREAK FREE",
+                    "autor":"III. By Rodrigo",
+                },
+    {
+                    "img":"./img/71.jpg",
+                    "titulo":"INTRO VI",
+                    "autor":"VI. By Lidia",
+                },
+    {
+                    "img":"./img/29.jpg",
+                    "titulo":"JUEVES",
+                    "autor":"IV. By Alberto",
+                },
+    {
+                    "img":"./img/24.jpg",
+                    "titulo":"P******",
+                    "autor":"III. By Diego",
+                },
+            ]
+        },
+    ]
     }
 
     function iniProject(){
