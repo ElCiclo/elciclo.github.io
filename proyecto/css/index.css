@@ -229,4 +229,8 @@ font-family: helvetica;
     #passContent{
         width: 80vw;
     }
+
+    #iconHeader{
+        margin-left: 10vw;
+    }    
 }

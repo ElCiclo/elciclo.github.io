@@ -177,6 +177,10 @@ body{
     text-align: left;
 }
 
+#currentCicloText h1{
+    font-size: 35px;
+}
+
 .sliderButtons:hover{
     cursor: pointer;
     transform: scale(0.9);
@@ -539,7 +543,8 @@ body{
     }
 
     #currentCicloText h1{
-        margin-block-end: 0.34em;
+        margin-block-end: 0.32em;
+        font-size: 23px;
     }
 
     #cicloMascota{
