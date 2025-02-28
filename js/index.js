@@ -46,7 +46,7 @@ window.onload= () =>{
                 "img":"./img/3_sanlorenzocrianza.png",
             },
             {
-                "text": "<h1>ABADÍA DE PIEDAD</h1>RESERVA. Sorprendente en el mejor sentido de la palabra. Un producto respaldado por su solera, que le aporta madurez y estructura. Pensado para los paladares más refinados.",
+                "text": "<h1>ABADÍA DE PIEDAD</h1>RESERVA. Sorprendente en el mejor sentido de la palabra. Un producto respaldado por su solera, que le aporta madurez y estructura.",
                 "img":"./img/2_abadia.png",
             },
             {

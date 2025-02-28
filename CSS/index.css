@@ -49,6 +49,7 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #FAF9F6;
 }
 
 #header{
@@ -58,6 +59,7 @@ body{
     justify-content: end;
     margin-top: 5vh;
     margin-right: 5vw;
+    background-color: #FAF9F6;
 }
 
 .boton{
@@ -87,6 +89,7 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: end;
+    background-color: #FAF9F6;
 }
 
 #separacionInfo{
@@ -316,6 +319,8 @@ body{
     padding-bottom: 40px;
     font-size: 20px;
     font-family: helvetica;
+    padding-bottom: 40px;
+
 }
 
 .imagenGala{
@@ -326,6 +331,12 @@ body{
 .cicloVideo{
     width: 40vw;
     padding-bottom: 40px;
+}
+
+#trailerCicloIV{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 40vw;
 }
 
 #musPopUp{
@@ -477,12 +488,12 @@ body{
         width:95%;
         height: fit-content;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         text-align: left;
     }
 
     #currentCicloText h1{
-        margin-block-end: 0.37em;
+        margin-block-end: 0.34em;
     }
 
     #cicloMascota{
@@ -584,6 +595,10 @@ body{
     }
 
     #musHeader{
+        width: 90vw;
+    }
+
+    #trailerCicloIV{
         width: 90vw;
     }
 }
