@@ -171,6 +171,8 @@ window.onload= () =>{
         document.getElementById("ciclofix").classList.remove("hidePopUp");
         document.getElementById("ciclofix").classList.add("showPopUp");
         setTimeout(function(){
+            document.getElementById("ciclofix").classList.remove("showPopUp");
+            document.getElementById("ciclofix").classList.add("hidePopUp");
             window.location.href = "./proyecto/index.html?p="+currentPosition ;
         }, 3000);
     }
