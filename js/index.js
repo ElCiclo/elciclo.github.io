@@ -6,13 +6,13 @@ window.onload= () =>{
     let CDay = "2025-08-31";
 
     //globo
-    let globo = document.getElementById("globoMain");
+    // let globo = document.getElementById("globoMain");
 
-        let posX = 50;
-        let posY = 50;
-        let targetX = posX;
-        let targetY = posY;
-        let speed = 2;
+    // let posX = 50;
+    // let posY = 50;
+    // let targetX = posX;
+    // let targetY = posY;
+    // let speed = 2;
 
     //Carrusel
     let cicloJson;
@@ -90,8 +90,9 @@ window.onload= () =>{
         currentSlide.onclick = cicloFlix;
         toMainPage();
 
-        setInterval(moverGlobo, 500);
-        actualizarPosicion();
+        //globo
+        // setInterval(moverGlobo, 500);
+        // actualizarPosicion();
     } 
 
     function toMainPage(){
@@ -282,9 +283,9 @@ window.onload= () =>{
         targetY = Math.random() * maxY;
     }
 
-    globo.onclick = () => {
-        proyectos.scrollIntoView({behavior:"smooth"});
-        galaOpen();
-    }
+    // globo.onclick = () => {
+    //     proyectos.scrollIntoView({behavior:"smooth"});
+    //     galaOpen();
+    // }
 }
 
