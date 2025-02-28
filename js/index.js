@@ -201,6 +201,7 @@ window.onload= () =>{
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
         localStorage.setItem("enterBeca", "true");
 
+        window.location.href = "./proyecto/corto/index.html?c=LA%20NIEBLA";
     }
 
     function checkLocalStorage(){

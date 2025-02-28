@@ -303,7 +303,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 
