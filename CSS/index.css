@@ -44,6 +44,7 @@ body{
 }
 
 #main{
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -60,6 +61,15 @@ body{
     margin-top: 5vh;
     margin-right: 5vw;
     background-color: #FAF9F6;
+}
+
+#globoMain {
+    position: absolute;
+    width: 15vw;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s linear;
 }
 
 .boton{
@@ -600,6 +610,10 @@ body{
 
     #trailerCicloIV{
         width: 90vw;
+    }
+
+    #globoMain {
+        width: 40vw;
     }
 }
 

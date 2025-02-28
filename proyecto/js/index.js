@@ -18,7 +18,7 @@ window.onload  = () =>{
                 "name":"DEL <del>AÑO</del> CICLO",
                 "cortos":[
                     {
-                        "img":"./img/57.jpg",
+                        "img":"./img/51.jpg",
                         "titulo":"ABREJAIME",
                         "autor":"VII. By Rodrigo",
                     },

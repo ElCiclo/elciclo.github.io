@@ -156,7 +156,7 @@ window.onload  = () =>{
             },
             {
                 "titulo":"PEUGEOOT 205",
-                "embedId": "",
+                "embedId": "fGgUmMLbAZg",
                 "curiosidades":"El único vídeo del I Ciclo que se puede ver en la página. Contigo hasta el fin del mundo",
             },
             {
@@ -167,7 +167,7 @@ window.onload  = () =>{
             {
                 "titulo":"SCARLET",
                 "embedId": "zLO8jvSpAAU",
-                "curiosidades":"El rótulo en árabe de la finca dice: \"X\"",
+                "curiosidades":"Basado en la apasionante vida de Roberwido",
             },
             {
                 "titulo":"TINDER",
@@ -246,7 +246,7 @@ window.onload  = () =>{
             },
             {
                 "titulo":"LOW BATTERY",
-                "embedId": "",
+                "embedId": "fGgUmMLbAZg",
                 "curiosidades":"Ganador del tercer premio del concurso \"DICIEMBRE EN CORTO\" 2022",
             },
             {

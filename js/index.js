@@ -5,6 +5,15 @@ window.onload= () =>{
     let daysLeft = document.getElementById("daysLeft");
     let CDay = "2025-08-31";
 
+    //globo
+    let globo = document.getElementById("globoMain");
+
+        let posX = 50;
+        let posY = 50;
+        let targetX = posX;
+        let targetY = posY;
+        let speed = 2;
+
     //Carrusel
     let cicloJson;
     let currentSlide = document.getElementById("sliderContent");
@@ -16,6 +25,7 @@ window.onload= () =>{
     let galaButton = document.getElementById("galaProyectos");
     let musButton = document.getElementById("musProyectos");
     let becaButton = document.getElementById("becasProyectos");
+    let proyectos = document.getElementById("proyectos")
 
     let galaPopUp = document.getElementById("galaPopUp");
     let musPopUp = document.getElementById("musPopUp");
@@ -75,6 +85,9 @@ window.onload= () =>{
         
         currentSlide.onclick = cicloFlix;
         toMainPage();
+
+        setInterval(moverGlobo, 500);
+        actualizarPosicion();
     } 
 
     function toMainPage(){
@@ -177,7 +190,8 @@ window.onload= () =>{
         }, 3000);
     }
 
-    galaButton.onclick = () => {
+    galaButton.onclick = galaOpen;
+    function galaOpen(){
         galaButton.innerHTML = "<del>"+galaButton.innerText+"</del>";
         localStorage.setItem("enterGala", "true");
         
@@ -230,5 +244,31 @@ window.onload= () =>{
         document.getElementById("container").style.overflowY = 'auto';
     }
 
+    //Funciones globo
+    function actualizarPosicion() {
+        let dx = targetX - posX;
+        let dy = targetY - posY;
+        let distancia = Math.sqrt(dx * dx + dy * dy);
+
+        if (distancia > 1) { 
+            posX += (dx / distancia) * speed;
+            posY += (dy / distancia) * speed;
+            globo.style.transform = `translate(${posX}px, ${posY}px)`;
+        }
+
+        requestAnimationFrame(actualizarPosicion);
+    }
+
+    function moverGlobo() {
+        let maxX = window.innerWidth - 50;
+        let maxY = window.innerHeight - 70;
+        targetX = Math.random() * maxX;
+        targetY = Math.random() * maxY;
+    }
+
+    globo.onclick = () => {
+        proyectos.scrollIntoView({behavior:"smooth"});
+        galaOpen();
+    }
 }
 
