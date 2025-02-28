@@ -289,3 +289,29 @@ window.onload= () =>{
     // }
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById("loader");
+    const loadingLogo = document.getElementById("loading-logo");
+    
+    // Mostrar el loader y el logo inmediatamente
+    loader.style.display = "flex";
+    loadingLogo.style.opacity = "1";
+    
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        // Desvanecer la pantalla de carga
+        loader.style.opacity = "0";
+        loader.style.transition = "opacity 0.5s ease-in-out";
+        
+        // Mostrar el contenido principal
+        document.body.style.opacity = "1";
+        
+        // Eliminar la pantalla de carga después de la transición
+        setTimeout(function() {
+          loader.style.display = "none";
+        }, 500);
+      }, 1000);
+    });
+  });
+  
