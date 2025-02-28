@@ -29,8 +29,10 @@ window.onload= () =>{
 
     let galaPopUp = document.getElementById("galaPopUp");
     let musPopUp = document.getElementById("musPopUp");
+    let nieblaPopUp = document.getElementById("nieblaPopUp");
     let closeGalaPopUp = document.getElementById("closeGalaPopUp");
     let closeMusPopUp = document.getElementById("closeMusPopUp");
+    let closeNieblaPopUp = document.getElementById("closeNieblaPopUp");
 
     cicloJson = loadJson();
     loadInicial();
@@ -215,7 +217,11 @@ window.onload= () =>{
         becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
         localStorage.setItem("enterBeca", "true");
 
-        window.location.href = "./proyecto/corto/index.html?c=LA%20NIEBLA";
+        nieblaPopUp.classList.remove("hidePopUp");
+        nieblaPopUp.classList.add("showPopUp");
+
+        document.getElementById("container").style.overflow = 'hidden';
+        document.getElementById("nieblaPopUp").style.overflowY = 'scroll';
     }
 
     function checkLocalStorage(){
@@ -236,6 +242,10 @@ window.onload= () =>{
 
     closeMusPopUp.onclick = () => {
         closePopUp(musPopUp);
+    }
+
+    closeNieblaPopUp.onclick = () => {
+        closePopUp(nieblaPopUp);
     }
 
     function closePopUp(popUpToClose){
