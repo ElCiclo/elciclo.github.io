@@ -21,6 +21,8 @@ window.onload= () =>{
     let rightButton = document.getElementById("botonDerecho");
     let leftButton = document.getElementById("botonIzquierdo");
 
+    let corchoSound = document.getElementById("corcho");
+
     //Projects buttons
     let galaButton = document.getElementById("galaProyectos");
     let musButton = document.getElementById("musProyectos");
@@ -185,6 +187,10 @@ window.onload= () =>{
     function cicloFlix(){
         document.getElementById("ciclofix").classList.remove("hidePopUp");
         document.getElementById("ciclofix").classList.add("showPopUp");
+        
+        setTimeout(function(){
+            corchoSound.play();
+        }, 2200);
         setTimeout(function(){
             document.getElementById("ciclofix").classList.remove("showPopUp");
             document.getElementById("ciclofix").classList.add("hidePopUp");
