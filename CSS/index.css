@@ -293,8 +293,7 @@ body{
 }
 
 #museoProyectos{
-    /* background-image: url("../img/niebla.png"); */
-    background-color: #ff0000;
+    background-image: url("../img/museo.png");
     background-size: cover;
 }
 
