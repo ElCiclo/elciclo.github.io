@@ -249,7 +249,7 @@ body{
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: start;
-    height: 40vh;
+    height: 45vh;
 }
 
 .flexRowButtons{
@@ -289,6 +289,12 @@ body{
 }
 #becasProyectos{
     background-image: url("../img/niebla.png");
+    background-size: cover;
+}
+
+#museoProyectos{
+    /* background-image: url("../img/niebla.png"); */
+    background-color: #ff0000;
     background-size: cover;
 }
 
@@ -613,7 +619,7 @@ body{
     }
 
     #contentProyectos{
-        height: 35vh;
+        height: 40vh;
     }
 
     .secondHeader{

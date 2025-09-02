@@ -3,7 +3,7 @@ window.onload= () =>{
     let mail = document.getElementById("mail");
     let icons = document.getElementsByClassName("cicloIcon");
     let daysLeft = document.getElementById("daysLeft");
-    let CDay = "2025-08-31";
+    let CDay = "2025-09-6";
 
     //globo
     // let globo = document.getElementById("globoMain");
@@ -27,7 +27,8 @@ window.onload= () =>{
     let galaButton = document.getElementById("galaProyectos");
     let musButton = document.getElementById("musProyectos");
     let becaButton = document.getElementById("becasProyectos");
-    let proyectos = document.getElementById("proyectos")
+    let museoButton = document.getElementById("museoProyectos");
+    let proyectos = document.getElementById("proyectos");
 
     let galaPopUp = document.getElementById("galaPopUp");
     let musPopUp = document.getElementById("musPopUp");
@@ -231,6 +232,12 @@ window.onload= () =>{
         document.getElementById("nieblaPopUp").style.overflowY = 'scroll';
     }
 
+    museoButton.onclick = () => {
+        galaButton.innerHTML = "<del>"+museoButton.innerText+"</del>";
+        localStorage.setItem("enterMuseo", "true");
+        window.location.href = "./audioguia/index.html";
+    }
+
     function checkLocalStorage(){
         if(localStorage.getItem("enterGala") === "true"){
             galaButton.innerHTML = "<del>"+galaButton.innerText+"</del>";
@@ -240,6 +247,9 @@ window.onload= () =>{
         }
         if(localStorage.getItem("enterBeca") === "true"){
             becaButton.innerHTML = "<del>"+becaButton.innerText+"</del>";
+        }
+        if(localStorage.getItem("enterMuseo") === "true"){
+            museoButton.innerHTML = "<del>"+museoButton.innerText+"</del>";
         }
     }
 

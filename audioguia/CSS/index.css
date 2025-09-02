@@ -1,0 +1,108 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fuente/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('woff');
+  }
+
+@font-face {
+    font-family: helvetica;
+    src: url(../fuente/helvetica/Helvetica.ttf) format('woff');
+}
+
+*{
+    font-family: PlayfairDisplay;
+    line-height: 1.4;
+}
+
+body{
+    background-color: #ff0000;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+.cicloIcon{
+    width: 50px;
+}
+.movil{
+    display: none;
+}
+.tituloHeader{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.secondHeader{
+    width: 90vw;
+    font-size: 32px;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+#museo{
+    background-color: #ff0000;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.reporductorAudioMuseo{
+    width: 90vh;
+}
+
+.contentMuseo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.invertido{
+    flex-direction: row-reverse;
+}
+
+/* .textMuseo{
+    align-items: center;
+    width: 40vw;
+    height: fit-content;
+    text-align: left;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: helvetica;
+    padding-bottom: 40px;
+
+} */
+
+.imagenMuseoLarga{
+    width: 30vw;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .movil{
+        display: none;
+    }
+    
+    /* .textMuseo{
+        width: 90vw;
+        font-size: medium;
+    } */
+    
+    .imagenMuseoLarga{
+        width: 90vw;
+        padding-bottom: 40px;
+    }
+    .reporductorAudioMuseo{
+        padding-bottom: 5vh;
+    }
+}
