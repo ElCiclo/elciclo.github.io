@@ -233,7 +233,7 @@ window.onload= () =>{
     }
 
     museoButton.onclick = () => {
-        galaButton.innerHTML = "<del>"+museoButton.innerText+"</del>";
+        museoButton.innerHTML = "<del>"+museoButton.innerText+"</del>";
         localStorage.setItem("enterMuseo", "true");
         window.location.href = "./audioguia/index.html";
     }
